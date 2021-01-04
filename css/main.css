@@ -1,0 +1,313 @@
+/** colors **/
+@-webkit-keyframes mover {
+  0% {
+    -webkit-transform: rotate(-10deg) scale(1.2);
+            transform: rotate(-10deg) scale(1.2);
+  }
+  25% {
+    -webkit-transform: rotate(10deg) scale(1.2);
+            transform: rotate(10deg) scale(1.2);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg) scale(1.2);
+            transform: rotate(-10deg) scale(1.2);
+  }
+  100% {
+    -webkit-transform: rotate(0deg) scale(1.2);
+            transform: rotate(0deg) scale(1.2);
+  }
+}
+@keyframes mover {
+  0% {
+    -webkit-transform: rotate(-10deg) scale(1.2);
+            transform: rotate(-10deg) scale(1.2);
+  }
+  25% {
+    -webkit-transform: rotate(10deg) scale(1.2);
+            transform: rotate(10deg) scale(1.2);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg) scale(1.2);
+            transform: rotate(-10deg) scale(1.2);
+  }
+  100% {
+    -webkit-transform: rotate(0deg) scale(1.2);
+            transform: rotate(0deg) scale(1.2);
+  }
+}
+
+@media (max-width: 550px) {
+  header div.links nav ul li a {
+    margin: 0 5%;
+  }
+}
+
+main section.content {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.content div.main-form {
+  width: 60%;
+  height: 40%;
+  /** border:  1px solid $color-pink **/
+}
+
+main section.content div.main-form form {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section.content div.main-form form header.form {
+  width: 100%;
+  height: 10%;
+  border: none;
+  margin-bottom: 5%;
+}
+
+main section.content div.main-form form header.form h1 {
+  margin: auto;
+  color: #FE8EA7;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 3.5em;
+}
+
+main section.content div.main-form form div.input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main section.content div.main-form form div.input input {
+  width: 90%;
+  height: 4.5em;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  outline: none;
+  padding: 1em;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 100%;
+}
+
+main section.content div.main-form form div.input input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Lato", sans-serif;
+  font-size: clamp(1em, 2vh, 2em);
+}
+
+main section.content div.main-form form div.input input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Lato", sans-serif;
+  font-size: clamp(1em, 2vh, 2em);
+}
+
+main section.content div.main-form form div.input input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Lato", sans-serif;
+  font-size: clamp(1em, 2vh, 2em);
+}
+
+main section.content div.main-form form div.input input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Lato", sans-serif;
+  font-size: clamp(1em, 2vh, 2em);
+}
+
+main section.content div.main-form form div.button {
+  width: 100%;
+  height: 10%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main section.content div.main-form form div.button button {
+  height: 4em;
+  /** width:  25% **/
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  margin: 0 1em;
+  font-family: "Lato", sans-serif;
+  font-size: clamp(1em, 2vh, 3em);
+  cursor: pointer;
+}
+
+main section.content div.main-form form div.button button:last-of-type {
+  background-color: #FE8EA7;
+}
+
+main section.content div.main-form form div.button button:first-of-type {
+  background-color: black;
+}
+
+@media screen and (max-width: 850px) {
+  main section.content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: flex;
+        -ms-flex-align: flex;
+            align-items: flex;
+  }
+  main section.content div.main-form {
+    width: 90%;
+  }
+  main section.content div.main-form form div.input {
+    margin-top: 2em;
+  }
+  main section.content div.main-form form div.input input {
+    width: 100%;
+  }
+  main section.content div.main-form form div.button button {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 20%;
+            flex: 1 1 20%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  background-image: url("../img/background-black-white-blur.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main header {
+  width: 90%;
+  max-width: 100%;
+  height: 10%;
+  border-bottom: 1px solid #FE8EA7;
+  /** grid **/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main header div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+main header div.logo img {
+  width: auto;
+  max-width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+main header div.links nav {
+  width: 100%;
+  height: 100%;
+}
+
+main header div.links nav ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main header div.links nav ul li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /** margin:  0 5% **/
+}
+
+main header div.links nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: clamp(1em, 2vw, 2em);
+  white-space: nowrap;
+}
+
+main header div.links nav ul li a:hover {
+  animation: mover .5s ease;
+  -webkit-animation: mover .5s ease;
+  -moz-animation: mover .5s ease;
+  -ms-animation: mover .5s ease;
+  -o-animation: mover .5s ease;
+}
+/*# sourceMappingURL=main.css.map */

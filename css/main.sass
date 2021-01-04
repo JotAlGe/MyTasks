@@ -1,0 +1,71 @@
+@import  _var
+@import  _animations
+@import  _media-queries
+@import  _content
+
+*
+    margin:  0
+    padding:  0
+    box-sizing:  border-box
+
+main
+    width:  100vw
+    max-width:  100vw
+    height:  100vh
+    background-image:  url("../img/background-black-white-blur.jpg")
+    background-position:  center top
+    background-repeat:  no-repeat
+    background-size:  cover
+
+    display:  flex
+    flex-direction:  column
+    align-items:  center
+
+    header
+        width:  90%
+        max-width:  100%
+        height:  10%
+        border-bottom:  1px solid $color-pink
+
+        /** grid **/
+        display: flex
+        justify-content: space-between
+        
+        div
+            flex:  1 1 auto
+        div.logo
+            img
+                width:  auto
+                max-width:  100%
+                height:  100%
+                cursor: pointer
+        div.links
+            nav
+                width:  100%
+                height:  100%
+                ul
+                    width: 100%
+                    height:  100%
+                    list-style:  none
+                    display:  flex
+                    li
+                        flex:  1 1 auto
+
+                        display: flex
+                        justify-content: space-evenly
+                        align-items:  center
+                        /** margin:  0 5% **/
+                        a
+                            color:  white
+                            text-decoration:  none
+                            font-family: $font-family
+                            font-weight:  400
+                            font-size: clamp(1em, 2vw, 2em)
+                            white-space:  nowrap
+                            &:hover
+                                animation:  mover .5s ease 
+                                -webkit-animation:  mover .5s ease  
+                                -moz-animation:  mover .5s ease 
+                                -ms-animation:  mover .5s ease 
+                                -o-animation:  mover .5s ease 
+
