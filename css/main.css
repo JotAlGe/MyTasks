@@ -36,6 +36,60 @@
   }
 }
 
+@-webkit-keyframes moverX {
+  0% {
+    -webkit-transform: rotate(-20deg) scale(1.3);
+            transform: rotate(-20deg) scale(1.3);
+  }
+  20% {
+    -webkit-transform: rotate(25deg) scale(1.3);
+            transform: rotate(25deg) scale(1.3);
+  }
+  30% {
+    -webkit-transform: rotate(-20deg) scale(1.3);
+            transform: rotate(-20deg) scale(1.3);
+  }
+  50% {
+    -webkit-transform: rotate(25deg) scale(1.3) 50%;
+            transform: rotate(25deg) scale(1.3) 50%;
+  }
+  70% {
+    -webkit-transform: rotate(-25deg) scale(1.3);
+            transform: rotate(-25deg) scale(1.3);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes moverX {
+  0% {
+    -webkit-transform: rotate(-20deg) scale(1.3);
+            transform: rotate(-20deg) scale(1.3);
+  }
+  20% {
+    -webkit-transform: rotate(25deg) scale(1.3);
+            transform: rotate(25deg) scale(1.3);
+  }
+  30% {
+    -webkit-transform: rotate(-20deg) scale(1.3);
+            transform: rotate(-20deg) scale(1.3);
+  }
+  50% {
+    -webkit-transform: rotate(25deg) scale(1.3) 50%;
+            transform: rotate(25deg) scale(1.3) 50%;
+  }
+  70% {
+    -webkit-transform: rotate(-25deg) scale(1.3);
+            transform: rotate(-25deg) scale(1.3);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 @media (max-width: 550px) {
   header div.links nav ul li a {
     margin: 0 5%;
@@ -260,11 +314,11 @@ main div.circle.show {
 
 main div.circle.show i {
   opacity: 1;
-  animation: mover .5s ease;
-  -webkit-animation: mover .5s ease;
-  -moz-animation: mover .5s ease;
-  -ms-animation: mover .5s ease;
-  -o-animation: mover .5s ease;
+  animation: moverX .5s ease;
+  -webkit-animation: moverX 1s ease;
+  -moz-animation: moverX 1s ease;
+  -ms-animation: moverX 1s ease;
+  -o-animation: moverX 1s ease;
 }
 
 @media (max-width: 1550px) {
