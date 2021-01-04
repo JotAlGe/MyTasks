@@ -33,6 +33,13 @@ main
         display: flex
         justify-content: space-between
         z-index:  1
+        transform:  translateY(0%)
+        &.moveHead
+            animation: moveHeader .5s ease
+            -webkit-animation: moveHeader .5s ease
+            -moz-animation: moveHeader .5s ease
+            -ms-animation: moveHeader .5s ease
+            -o-animation: moveHeader .5s ease
         
         div
             flex:  1 1 auto
