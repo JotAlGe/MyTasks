@@ -177,6 +177,10 @@ main section.content div.main-form form div.button button {
   cursor: pointer;
 }
 
+main section.content div.main-form form div.button button:hover {
+  opacity: .8;
+}
+
 main section.content div.main-form form div.button button:last-of-type {
   background-color: #FE8EA7;
 }
