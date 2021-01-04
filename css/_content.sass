@@ -1,111 +1,109 @@
 main
-    section.content 
+    section.content
         width: 100%
-        max-width:  100%
-        height:  100%
-        display:  flex
-        justify-content:  center
-        align-items:  center
+        max-width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
 
         div.main-form
-            width:  60%
-            height:  40%
+            width: 60%
+            height: 40%
             /** border:  1px solid $color-pink **/
 
             form
-                width:  100%
-                height:  100%
+                width: 100%
+                height: 100%
 
-                display:  flex
-                flex-direction:  column
-                justify-content:  center
-                header.form 
-                    width:  100%
-                    height:  10%
-                    border:  none
-                    margin-bottom:  5%
+                display: flex
+                flex-direction: column
+                justify-content: center
+                header.form
+                    width: 100%
+                    height: 10%
+                    border: none
+                    margin-bottom: 5%
 
                     h1
-                        margin:  auto
-                        color:  $color-pink
-                        font-family:  $font-family
-                        font-weight:  bold
-                        font-size:  $font-size-large
-                
+                        margin: auto
+                        color: $color-pink
+                        font-family: $font-family
+                        font-weight: bold
+                        font-size: $font-size-large
+
                 div.input
                     flex: 1 1 auto
-                    display: flex 
+                    display: flex
                     justify-content: center
-                    align-items:  center
+                    align-items: center
 
                     input
-                        width:  90%
-                        height:  4.5em
-                        background-color:  $black-transparent
-                        border:  none
+                        width: 90%
+                        height: 4.5em
+                        background-color: $black-transparent
+                        border: none
                         outline: none
-                        padding:  1em
-                        text-align:  center
-                        border-radius:  10px
-                        color:  $white
+                        padding: 1em
+                        text-align: center
+                        border-radius: 10px
+                        color: $white
                         font-size: 100%
 
                         &::placeholder
-                            color:  $white-transparent
+                            color: $white-transparent
                             font-family: $font-family
-                            font-size:  clamp(1em, 2vh, 2em)
-                
+                            font-size: clamp(1em, 2vh, 2em)
+
                 div.button
-                    flex:  1 1 auto
-                    height:  10%
                     flex: 1 1 auto
-                    
-                    display:  flex
+                    height: 10%
+                    flex: 1 1 auto
+
+                    display: flex
                     justify-content: center
                     align-items: flex-start
-                
+
                     button
-                        height:  4em
+                        height: 4em
                         /** width:  25% **/
-                        flex:  0 0 30%
-                        border-radius:  10px
-                        color:  $white
-                        border:  none
-                        margin:  0 1em
+                        flex: 0 0 30%
+                        border-radius: 10px
+                        color: $white
+                        border: none
+                        margin: 0 1em
                         font-family: $font-family
-                        font-size:  clamp(1em, 2vh, 3em)
+                        font-size: clamp(1em, 2vh, 3em)
                         cursor: pointer
+                        
+
                         i
-                            margin-right:  5%
-                            transform:  rotate(-15deg)
-                                
-                                
+                            margin-right: 5%
+                            transform: rotate(-15deg)
                             
-                                
+
                         &:hover
-                            opacity:  .8  
+                            opacity: .8
 
                         &:last-of-type
-                            background-color: $color-pink  
+                            background-color: $color-pink
                         &:first-of-type
-                            background-color:  black
-
+                            background-color: black
 
     @media screen and ( max-width: 850px )
         section.content
-            justify-content:  center
-            align-items:  flex
+            justify-content: center
+            align-items: flex
 
             div.main-form
-                width:  90%
+                width: 90%
 
                 form
                     div.input
-                        margin-top:  2em
+                        margin-top: 2em
                         input
-                            width:  100%
-                    
+                            width: 100%
+
                     div.button
                         button
                             flex: 1 1 20%
-

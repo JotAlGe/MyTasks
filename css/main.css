@@ -220,6 +220,74 @@ main section.content div.main-form form div.button button:first-of-type {
   }
 }
 
+main {
+  position: relative;
+}
+
+main div.circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .3;
+  background-color: #FE8EA7;
+  background-size: cover;
+  -webkit-clip-path: circle(30% at 73% -25%);
+          clip-path: circle(30% at 73% -25%);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+main div.circle i {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  cursor: pointer;
+  color: #fff;
+  font-size: 5em;
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+main div.circle.show {
+  -webkit-clip-path: circle(100% at 50% 0%);
+          clip-path: circle(100% at 50% 0%);
+  opacity: 1;
+  z-index: 1;
+}
+
+main div.circle.show i {
+  opacity: 1;
+  animation: mover .5s ease;
+  -webkit-animation: mover .5s ease;
+  -moz-animation: mover .5s ease;
+  -ms-animation: mover .5s ease;
+  -o-animation: mover .5s ease;
+}
+
+@media (max-width: 1550px) {
+  main div.circle {
+    -webkit-clip-path: circle(35% at 73% -20%);
+            clip-path: circle(35% at 73% -20%);
+  }
+}
+
+@media (max-width: 960px) {
+  main div.circle {
+    -webkit-clip-path: circle(40% at 85% -25%);
+            clip-path: circle(40% at 85% -25%);
+  }
+}
+
+@media (max-width: 600px) {
+  main div.circle {
+    -webkit-clip-path: circle(50% at 100% -25%);
+            clip-path: circle(50% at 100% -25%);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -235,6 +303,7 @@ main {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,6 +328,7 @@ main header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 1;
 }
 
 main header div {

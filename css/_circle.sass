@@ -1,0 +1,51 @@
+main 
+    position: relative
+    div.circle
+        position:  fixed
+        top:  0
+        left:  0
+        width:  100%
+        height:  100%
+        opacity:  .3
+        background-color: $color-pink
+        background-size:  cover
+        clip-path: circle(30% at 73% -25%)
+        transition:  all .5s ease
+        i
+            position:  absolute
+            right:  10%
+            top:  10%
+            cursor:  pointer
+            color:  $white
+            font-size:  5em
+            opacity:  0
+            transition:  all 1s ease 
+            
+
+        &.show
+            clip-path: circle(100% at 50% 0%)
+            opacity:  1
+            z-index:  1
+            i
+                opacity:  1
+                animation:  mover .5s ease 
+                -webkit-animation:  mover .5s ease  
+                -moz-animation:  mover .5s ease 
+                -ms-animation:  mover .5s ease 
+                -o-animation:  mover .5s ease 
+    
+
+@media (max-width:  1550px)
+    main
+        div.circle
+            clip-path: circle(35% at 73% -20%)
+
+@media (max-width:  960px)
+    main
+        div.circle
+            clip-path: circle(40% at 85% -25%)
+
+@media (max-width:  600px)
+    main
+        div.circle
+            clip-path: circle(50% at 100% -25%)
