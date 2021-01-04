@@ -10,7 +10,14 @@ main
         div.main-form
             width: 60%
             height: 40%
+            transform:  translateX(0%)
             /** border:  1px solid $color-pink **/
+            &.load
+                animation: moveLoad .5s ease
+                -moz-animation: moveLoad .5s ease
+                -webkit-animation: moveLoad .5s ease
+                -ms-animation: moveLoad .5s ease
+                -o-animation: moveLoad .5s ease
 
             form
                 width: 100%
