@@ -134,6 +134,60 @@
   }
 }
 
+@-webkit-keyframes moveInput {
+  0% {
+    -webkit-transform: translateX(0) scale(1.1);
+            transform: translateX(0) scale(1.1);
+  }
+  10% {
+    -webkit-transform: translateX(-5px) scale(1.1);
+            transform: translateX(-5px) scale(1.1);
+  }
+  30% {
+    -webkit-transform: translateX(5px) scale(1.1);
+            transform: translateX(5px) scale(1.1);
+  }
+  50% {
+    -webkit-transform: translateX(-10px) scale(1.1);
+            transform: translateX(-10px) scale(1.1);
+  }
+  75% {
+    -webkit-transform: translateX(10px) scale(1.1);
+            transform: translateX(10px) scale(1.1);
+  }
+  100% {
+    -webkit-transform: translateX(0px) scale(1.1);
+            transform: translateX(0px) scale(1.1);
+  }
+}
+
+@keyframes moveInput {
+  0% {
+    -webkit-transform: translateX(0) scale(1.1);
+            transform: translateX(0) scale(1.1);
+  }
+  10% {
+    -webkit-transform: translateX(-5px) scale(1.1);
+            transform: translateX(-5px) scale(1.1);
+  }
+  30% {
+    -webkit-transform: translateX(5px) scale(1.1);
+            transform: translateX(5px) scale(1.1);
+  }
+  50% {
+    -webkit-transform: translateX(-10px) scale(1.1);
+            transform: translateX(-10px) scale(1.1);
+  }
+  75% {
+    -webkit-transform: translateX(10px) scale(1.1);
+            transform: translateX(10px) scale(1.1);
+  }
+  100% {
+    -webkit-transform: translateX(0px) scale(1.1);
+            transform: translateX(0px) scale(1.1);
+  }
+}
+
 @media (max-width: 550px) {
   header div.links nav ul li a {
     margin: 0 5%;
@@ -231,6 +285,8 @@ main section.content div.main-form form div.input input {
 
 main section.content div.main-form form div.input input.error_input {
   border: 1px solid red;
+  -webkit-animation: moveInput .3s ease;
+          animation: moveInput .3s ease;
 }
 
 main section.content div.main-form form div.input input::-webkit-input-placeholder {
