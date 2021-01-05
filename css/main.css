@@ -229,6 +229,10 @@ main section.content div.main-form form div.input input {
   font-size: 100%;
 }
 
+main section.content div.main-form form div.input input.error_input {
+  border: 1px solid red;
+}
+
 main section.content div.main-form form div.input input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
   font-family: "Lato", sans-serif;
@@ -394,6 +398,18 @@ main div.circle.show i {
     -webkit-clip-path: circle(50% at 100% -25%);
             clip-path: circle(50% at 100% -25%);
   }
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 * {
