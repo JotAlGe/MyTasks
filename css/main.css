@@ -313,6 +313,19 @@ main section.content div.main-form form div.input input::placeholder {
   font-size: clamp(1em, 2vh, 2em);
 }
 
+main section.content div.main-form form div.input i {
+  color: green;
+  margin-left: 1%;
+  font-size: 3.5em;
+  opacity: 0;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+}
+
+main section.content div.main-form form div.input i.check {
+  opacity: 1;
+}
+
 main section.content div.main-form form div.button {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -405,6 +418,18 @@ main div.circle {
           clip-path: circle(30% at 73% -25%);
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+main div.circle div p {
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+  color: white;
+  font-style: italic;
 }
 
 main div.circle i {
