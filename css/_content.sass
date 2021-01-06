@@ -59,6 +59,8 @@ main
                         &.error_input
                             border:  1px solid red
                             animation:  moveInput .3s ease
+                        &.check_input
+                            border:  1px solid green
                         &::placeholder
                             color: $white-transparent
                             font-family: $font-family
@@ -67,10 +69,10 @@ main
                         color:  green
                         margin-left:  1%
                         font-size:  $font-size-large
-                        opacity:  0
+                        display:  none
                         transition:  opacity .5s ease
                         &.check
-                            opacity: 1
+                            display:  block
 
                 div.button
                     flex: 1 1 auto

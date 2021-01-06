@@ -289,6 +289,10 @@ main section.content div.main-form form div.input input.error_input {
           animation: moveInput .3s ease;
 }
 
+main section.content div.main-form form div.input input.check_input {
+  border: 1px solid green;
+}
+
 main section.content div.main-form form div.input input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
   font-family: "Lato", sans-serif;
@@ -317,13 +321,13 @@ main section.content div.main-form form div.input i {
   color: green;
   margin-left: 1%;
   font-size: 3.5em;
-  opacity: 0;
+  display: none;
   -webkit-transition: opacity .5s ease;
   transition: opacity .5s ease;
 }
 
 main section.content div.main-form form div.input i.check {
-  opacity: 1;
+  display: block;
 }
 
 main section.content div.main-form form div.button {

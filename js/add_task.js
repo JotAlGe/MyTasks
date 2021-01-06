@@ -32,9 +32,11 @@ function add_element() {
         circle.append(fragment)
         input.value = ''
         check.classList.add('check')
+        input.classList.add('check_input')
     }else{
         validate()
         check.classList.remove('check')
+        input.classList.remove('check_input')
     }   
     
 }
