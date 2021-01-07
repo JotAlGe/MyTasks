@@ -36,6 +36,8 @@ function add_element() {
         close_div.addEventListener('click', () => {
            close_div.parentElement.remove()
         })
+
+
         div.appendChild(close_div)
         div.append(task)
         
