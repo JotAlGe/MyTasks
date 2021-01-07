@@ -429,11 +429,34 @@ main div.circle {
       align-content: center;
 }
 
+main div.circle div {
+  border-bottom: 1px solid white;
+  padding: 2em;
+  position: relative;
+}
+
 main div.circle div p {
   font-family: "Lato", sans-serif;
   font-size: 2em;
   color: white;
   font-style: italic;
+}
+
+main div.circle div a {
+  position: absolute;
+  right: -50%;
+  top: 0;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+main div.circle div a:hover {
+  -webkit-transform: scale(1.1) rotate(15deg);
+          transform: scale(1.1) rotate(15deg);
 }
 
 main div.circle i {

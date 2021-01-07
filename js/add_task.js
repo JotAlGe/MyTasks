@@ -17,6 +17,7 @@ function validate() {
   }
 }
 
+/* *******  function add_element() ******************************* */
 function add_element() {
     let input = document.getElementById('main_text')
     let check = document.getElementById('check')
@@ -25,12 +26,24 @@ function add_element() {
         let fragment = document.createDocumentFragment()
         let div = document.createElement('div')
         let task = document.createElement('p')
+        let close_div = document.createElement('a')
 
+        close_div.textContent = 'X'
+        close_div.setAttribute('id', 'close_div')
+        div.setAttribute('id', 'div_content')
+
+        /* close div */
+        close_div.addEventListener('click', () => {
+           close_div.parentElement.remove()
+        })
+        div.appendChild(close_div)
         div.append(task)
+        
         fragment.append(div)
         task.textContent = '- ' + input.value
         circle.append(fragment)
         input.value = ''
+        
         check.classList.add('check')
         input.classList.add('check_input')
     }else{
@@ -40,5 +53,16 @@ function add_element() {
     }   
     
 }
+
+/* /* ------------------cerrar div ---------------- *//* 
+const div_close = document.getElementById('close_div')
+const div_content = document.getElementById('div_content')  */
+
+/* function closeDiv(){
+
+} */
+
+
+/* div_close.addEventListener('click' , closeDiv) */
 but_remember.addEventListener("click", validate);
 but_remember.addEventListener("click", add_element);
